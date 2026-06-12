@@ -1,4 +1,4 @@
-export async function getRandomPokemon() {
+async function getRandomPokemon() {
     try {
         const randomId = Math.floor(Math.random() * 150) + 1
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
